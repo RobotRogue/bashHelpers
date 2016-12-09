@@ -14,7 +14,7 @@ echo " "; echo "- Done."
 echo " "; echo "-- Current Branch and Commit --"
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 COMMIT=$(git rev-parse --short HEAD)
-echo " "; echo "$BRANCH - $COMMIT"
+echo " "; echo "[$BRANCH - $COMMIT]"
 
 echo " "; echo "-- Running Latest Build --"
 npm run dev
