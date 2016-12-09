@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo " "; echo "-- Navigating to Lanc project --"
-cd $HOME/git/lan-progressive
+cd $HOME/git/PROJECTFOLDER
 pwd
 
 echo " "; echo "-- Performing a Git Pull --"
