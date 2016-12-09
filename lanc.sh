@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo " "; echo "-- Navigating to Lanc project --"
-cd $HOME/git/PROJECTFOLDER
-pwd
+cd $HOME/git/lancome-progressive
+PWD
 
 echo " "; echo "-- Performing a Git Pull --"
 git pull
@@ -12,11 +12,10 @@ echo " "; echo "-- Performing NPM Install --"
 npm i
 echo " "; echo "- Done."
 
-echo " "; echo "-- Current Git Branch --"
-git rev-parse --abbrev-ref HEAD
-
-echo " "; echo "-- Latest Commit Hash --"
-git --no-pager log -n 1
+echo " "; echo "-- Current Branch and Commit --"
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+COMMIT=$(git rev-parse --short HEAD)
+echo "$BRANCH - $COMMIT"
 
 echo " "; echo "-- Running Latest Build --"
 npm run dev
