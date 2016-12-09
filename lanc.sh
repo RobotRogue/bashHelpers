@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo " "; echo "-- Navigating to Lanc project --"
-cd $HOME/git/PROJECTFOLDER
-PWD
+cd $HOME/git/PROJECTFOLDER && PWD
 
 echo " "; echo "-- Performing a Git Pull --"
 git pull &> /dev/null
