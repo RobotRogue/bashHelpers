@@ -12,6 +12,9 @@ echo " "; echo "-- Performing NPM Install --"
 npm i
 echo " "; echo "- Done."
 
+echo " "; echo "-- Current Git Branch --"
+git rev-parse --abbrev-ref HEAD
+
 echo " "; echo "-- Latest Commit Hash --"
 git --no-pager log -n 1
 
