@@ -1,6 +1,6 @@
 #!/bin/bash
-
-echo " "; echo "-- Navigating to Lanc project --"
+clear
+echo " "; echo "-- Navigating to ProjectName project --"
 cd $HOME/git/PROJECTFOLDER && PWD
 
 echo " "; echo "-- Performing a Git Pull --"
