@@ -11,6 +11,10 @@ echo " "; echo "-- Performing NPM Install --"
 npm i &> /dev/null
 echo " "; echo "- Done."
 
+echo " "; echo "-- Running Linter --"
+npm run lint
+echo " "; echo "- Done."
+
 echo " "; echo "-- Current Branch and Commit --"
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 COMMIT=$(git rev-parse --short=8 HEAD)
