@@ -1,3 +1,3 @@
-javascript: (function () {   
-    var t = document.getElementById("description");   
-    if (t) {t.value ="*URL Tested:*\n- \n \n*Description:*\n- \n \n*Steps to Reproduce:*\n# Navigate to (URL)\n# \n \n*Tested Behavior:*\n- \n \n*Expected Behavior:*\n- \n \n *Notes:*\n- Branch + Commit SHA:\n- ";}})();
+javascript:(function() {
+    var e = document.getElementById('description');
+    if (e) {e.value += '*Branch/Commit:*\n\n\n*Environment:*\n- [EnvName]\n\n*Device/Browser:*\n- [device/browser]\n\n*URL:*\n- \n\n*Steps to Reproduce:*\n# Login with \n# Navigate to \n\n*Tested Result:*\n- \n\n*Expected Result:*\n- \n\n*Notes:*\n- ';}})();
