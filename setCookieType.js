@@ -4,19 +4,23 @@ javascript: (function() {
     switch (selection) {
         case "1":
             document.cookie = "new_user=true";
+            location.reload();
             console.log("Added cookie: new_user=true");
             break;
         case "2":
             document.cookie = "employee=true";
+            location.reload();
             console.log("Added cookie: employee=true");
             break;
         case "3":
             document.cookie = "group_invite=true";
+            location.reload();
             console.log("Added cookie: group_invite=true");
             break;
         case "4":
             document.cookie = "new_user=true";
             document.cookie = "beneficiary=true";
+            location.reload();
             console.log("Added cookie: new_user=true + beneficiary=true");
             break;
         default:
