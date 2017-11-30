@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# Caution: test names that contain $ need to be escaped with \$
-# Caution: test names that contain - need to be escaped with --
 # Please run using ./smoketestLight [environment]
 # IE: ./smoketestLight fe-local_windows_10_chrome
+
+# Caution: test names that contain $ need to be escaped with \$
+# Caution: test names that contain - need to be escaped with --
+# If you get an error, its likely a syntax issue
 
 cd $HOME/git/chimp-web-client
 
@@ -17,7 +19,7 @@ startTime=$(date +"%T")
 
 echo "------------------------------------------------------------"
 echo "Running Light Smoketest"
-echo "Using this environment: $1"
+echo "Test Environment: $1"
 echo "------------------------------------------------------------"
 echo " "
 
