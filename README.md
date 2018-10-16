@@ -59,3 +59,6 @@ This little bookmarklet prompts the user for a USPS Tracking Number, then takes 
 
 ### Note:
 For the .sh files, you have to  make them executable first using: chmod +x yourscript.sh
+
+## GIT CORE EDITOR CHANGE
+When you want to change the default editor that Git uses in the command line, run this command: git config --global core.editor "nano"
